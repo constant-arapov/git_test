@@ -12,6 +12,7 @@ namespace console_app
         {
             Console.WriteLine("Hello world");
             //Commit from home_pc
+            //Commit from place2
         }
     }
 }
