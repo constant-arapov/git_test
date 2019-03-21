@@ -22,7 +22,18 @@ namespace console_app
             //commit from place2  2019-03-21 5:17
             //commit from place2  2019-03-21 5:28
             CFoo.Do();
-            CScubbyDo.IveSomeClue(); 
+            CScubbyDo.IveSomeClue();
+
+
+            Method2();
+
         }
+
+        static void Method2()
+        {
+            Console.WriteLine("Method 2");
+        }
+
+
     }
 }
