@@ -20,6 +20,7 @@ namespace console_app
         public static void IveSomeClue()
         {
             //Comments Scubby do
+            //bla bla
             Console.WriteLine("I have some clue ");
 
         }
