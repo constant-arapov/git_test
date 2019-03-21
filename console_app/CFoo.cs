@@ -15,6 +15,10 @@ namespace console_app
 
     }
 
+    /// <summary>
+    /// This is a method of Scubby Do
+    /// who wants some clue
+    /// </summary>
     public static class CScubbyDo
     {
         public static void IveSomeClue()
