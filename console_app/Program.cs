@@ -27,12 +27,25 @@ namespace console_app
 
             Method2();
 
+            CScubbyDo.IveSomeClue();
+
+            Method1();
+
+        }
+
+        static void Method1()
+        {
+            Console.WriteLine("Method 1");
         }
 
         static void Method2()
         {
             Console.WriteLine("Method 2");
         }
+
+
+
+     
 
 
     }
