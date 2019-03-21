@@ -13,7 +13,18 @@ namespace console_app
             Console.WriteLine("Do Job !");
         }
 
+    }
 
+    public static class CScubbyDo
+    {
+        public static void IveSomeClue()
+        {
+            Console.WriteLine("I have some clue ");
+
+        }
 
     }
+
+
+
 }
