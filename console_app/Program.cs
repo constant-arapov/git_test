@@ -28,9 +28,9 @@ namespace console_app
             Method2();
 
             CScubbyDo.IveSomeClue();
-
+            CUtil.RoutineMethod1();
             Method1();
-
+                  
         }
 
         static void Method1()
