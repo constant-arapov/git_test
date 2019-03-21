@@ -40,6 +40,10 @@ namespace console_app
 
             }
 
+            CScubbyDo.IveSomeClue();
+            CUtil.RoutineMethod1();
+            Method1();
+                  
         }
 
         static void Method1()
