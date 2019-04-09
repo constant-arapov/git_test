@@ -28,7 +28,7 @@ namespace console_app
             Console.WriteLine("I have some clue ");
 
         }
-
+        //place1 2019/10/04 3:10
     }
 
 
