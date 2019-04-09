@@ -12,7 +12,7 @@ namespace console_app
         {
             Console.WriteLine("Do Job !");
         }
-
+        //comment place2 2019/10/04
     }
 
     /// <summary>
