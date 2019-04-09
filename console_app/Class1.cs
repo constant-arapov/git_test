@@ -8,5 +8,6 @@ namespace console_app
 {
     class Class1
     {
+        //comment place1 2019/10/04 3:08
     }
 }
