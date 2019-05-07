@@ -48,7 +48,7 @@ steps:
     targetType: 'inline'
     script: '# Write your powershell commands here.
       
-    Get-Appxpackage > 1.txt
+    Get-Appxpackage 
      
 
       # Use the environment variables input below to pass secret variables to this script.'
