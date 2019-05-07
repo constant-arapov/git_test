@@ -37,6 +37,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: '# Write your powershell commands here.
+    failOnStderr: false
       
     
      add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
