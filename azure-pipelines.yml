@@ -35,6 +35,6 @@ steps:
     script: '# Write your powershell commands here.
       
      
-      DesktopAppConverter.exe -Installer C:\roxosoft\FileStar.msi -Destination C:\Output\Appx05 -PackageName "FileStarAB.FileStar"  -Publisher "CN=D28B8226-1360-495A-AAFF-0C4B08FC4276" -PackagePublisherDisplayName "FileStar AB" -PackageDisplayName  "FileStar" -Version 1.0.14.0 -MakeAppx -Verbose
+      DesktopAppConverter.exe -Installer \FileStar.msi -Destination Appx05 -PackageName "FileStarAB.FileStar"  -Publisher "CN=D28B8226-1360-495A-AAFF-0C4B08FC4276" -PackagePublisherDisplayName "FileStar AB" -PackageDisplayName  "FileStar" -Version 1.0.14.0 -MakeAppx -Verbose
       
       # Use the environment variables input below to pass secret variables to this script.'
