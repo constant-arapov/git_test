@@ -34,7 +34,7 @@ steps:
     targetType: 'inline'
     script: '# Write your powershell commands here.
       
-      Write-Host "Hello World"
+     
       add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
       
       # Use the environment variables input below to pass secret variables to this script.'
