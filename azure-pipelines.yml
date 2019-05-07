@@ -19,7 +19,7 @@ steps:
     script: '# Write your powershell commands here.
       
     
-     ls c:\
+     ls 
 
       # Use the environment variables input below to pass secret variables to this script.'
 
