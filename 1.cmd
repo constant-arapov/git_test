@@ -1,0 +1,1 @@
+powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx"
