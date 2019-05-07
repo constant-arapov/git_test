@@ -1,0 +1,2 @@
+add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
+DesktopAppConverter.exe -Installer \FileStar.msi -Destination Appx05 -PackageName "FileStarAB.FileStar"  -Publisher "CN=D28B8226-1360-495A-AAFF-0C4B08FC4276" -PackagePublisherDisplayName "FileStar AB" -PackageDisplayName  "FileStar" -Version 1.0.14.0 -MakeAppx -Verbose
