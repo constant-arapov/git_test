@@ -35,6 +35,6 @@ steps:
     script: '# Write your powershell commands here.
       
       Write-Host "Hello World"
-      Start-Sleep -s 15
+      Start-Sleep -s 120
       
       # Use the environment variables input below to pass secret variables to this script.'
