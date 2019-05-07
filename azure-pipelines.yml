@@ -34,5 +34,7 @@ steps:
     targetType: 'inline'
     script: '# Write your powershell commands here.
       
-     ls
+     ls|
+     ls ..\ |
+     ls ..\..\
       # Use the environment variables input below to pass secret variables to this script.'
