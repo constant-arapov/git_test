@@ -12,6 +12,11 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+
 - task: CmdLine@2
   inputs:
     script: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx"
