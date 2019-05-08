@@ -16,6 +16,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    failOnStderr: true
     script: '# Write your powershell commands here.
       
     
@@ -26,6 +27,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    failOnStderr: true
     script: '# Write your powershell commands here.
       
     
@@ -36,6 +38,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    failOnStderr: true
     script: '# Write your powershell commands here.
     failOnStderr: false
       
@@ -47,6 +50,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    failOnStderr: true
     script: '# Write your powershell commands here.
       
     Get-Appxpackage 
