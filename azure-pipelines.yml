@@ -26,7 +26,7 @@ steps:
     script: '# Write your powershell commands here.
       
     
-     Start-Sleep -s 180 
+
 
       # Use the environment variables input below to pass secret variables to this script.'
 
@@ -34,7 +34,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx"
+    script: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx 2>&1 | tee -filePath results.txt"
       
       echo Use the environment variables input below to pass secret variables to this script'
 
