@@ -15,21 +15,22 @@ variables:
 
 steps:
 
- task: PowerShell@2
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- task: PowerShell@2
   inputs:
     targetType: 'inline'
     failOnStderr: true
     script: '# Write your powershell commands here.
       
-    Start-Sleep -s 120
-     
+    
+     Start-Sleep -s 180 
 
       # Use the environment variables input below to pass secret variables to this script.'
 
 
-
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - task: CmdLine@2
   inputs:
