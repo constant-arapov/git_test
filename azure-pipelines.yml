@@ -19,10 +19,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+
 - task: AzureCLI@1
   inputs:
     scriptLocation: 'inlineScript'
-    inlineScript: 'add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx'
+    inlineScript: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx"'
 
 - task: PowerShell@2
   inputs:
@@ -55,7 +56,16 @@ steps:
 
       # Use the environment variables input below to pass secret variables to this script.'
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    failOnStderr: true
+    script: '# Write your powershell commands here.
+      
+    
+    Write-Output add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
 
+      # Use the environment variables input below to pass secret variables to this script.'
 
 - task: PowerShell@2
   inputs:
@@ -65,10 +75,7 @@ steps:
     failOnStderr: false
       
     
-    - task: AzureCLI@1
-  inputs:
-    scriptLocation: 'inlineScript'
-    inlineScript: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx"'
+     add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
 
       # Use the environment variables input below to pass secret variables to this script.'
 
