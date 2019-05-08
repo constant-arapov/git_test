@@ -16,38 +16,9 @@ variables:
 steps:
 
 
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    failOnStderr: true
-    script: '# Write your powershell commands here.
-      
-    Get-EventLog   Application -newest 1000
-
-
-      # Use the environment variables input below to pass secret variables to this script.'
 
 
 
-- task: CmdLine@2
-  inputs:
-    script: ' ls "C:\Program Files (x86)\FileStar"
-      
-      echo Use the environment variables input below to pass secret variables to this script'
-
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    failOnStderr: true
-    script: '# Write your powershell commands here.
-      
-    
-
-
-      # Use the environment variables input below to pass secret variables to this script.'
 
 
 
@@ -56,6 +27,10 @@ steps:
     script: 'powershell "add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx 2>&1 | tee -filePath results.txt"
       
       echo Use the environment variables input below to pass secret variables to this script'
+
+
+
+
 
 
 - task: PowerShell@2
@@ -91,6 +66,20 @@ steps:
      add-appxpackage -path Microsoft.DesktopAppConverter_2.1.4.0_x64__8wekyb3d8bbwe.Appx
 
       # Use the environment variables input below to pass secret variables to this script.'
+
+
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    failOnStderr: true
+    script: '# Write your powershell commands here.
+      
+    Get-EventLog   Application -newest 1000
+
+
+      # Use the environment variables input below to pass secret variables to this script.'
+
 
 - task: PowerShell@2
   inputs:
