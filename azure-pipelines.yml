@@ -19,12 +19,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-
-- task: CmdLine@2
+- task: PowerShell@2
   inputs:
-    script: 'msiexec.exe /i Filestar.msi  /QN  INSTALLDIR="C:\Program Files (x86)\FileStar\"  AUTOSTART=YES  MSIRESTARTMANAGERCONTROL=Disable  REBOOT=ReallySuppress
+    targetType: 'inline'
+    failOnStderr: true
+    script: '# Write your powershell commands here.
       
-      echo Use the environment variables input below to pass secret variables to this script'
+    Get-EventLog   Application -newest 1000
+
+
+      # Use the environment variables input below to pass secret variables to this script.'
+
 
 
 - task: CmdLine@2
