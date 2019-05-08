@@ -29,7 +29,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: ' ls "C:\Program Files (x86)"
+    script: ' ls "C:\Program Files (x86)\FileStar"
       
       echo Use the environment variables input below to pass secret variables to this script'
 
