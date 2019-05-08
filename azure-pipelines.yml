@@ -11,6 +11,9 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
+jobs:
+ -job: job1
+
 steps:
 
 - script: echo Hello, world!
