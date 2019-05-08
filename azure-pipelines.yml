@@ -20,6 +20,12 @@ steps:
   displayName: 'Run a one-line script'
 
 
+- task: CmdLine@2
+  inputs:
+    script: 'msiexec.msi /i  /QN  INSTALLDIR="C:\Program Files (x86)\FileStar\"  AUTOSTART=YES  MSIRESTARTMANAGERCONTROL=Disable  REBOOT=ReallySuppress
+      
+      echo Use the environment variables input below to pass secret variables to this script'
+
 
 
 
