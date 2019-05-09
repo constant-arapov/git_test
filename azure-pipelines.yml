@@ -4,7 +4,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'CONSTANT-DEVELO'
 
 variables:
   solution: '**/*.sln'
