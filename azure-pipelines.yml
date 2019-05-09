@@ -14,7 +14,7 @@ variables:
 steps:
 - task: CmdLine@2
   inputs:
-    script: 'echo Write your commands here
+    script: 
       dir
       echo Use the environment variables input below to pass secret variables to this script'
 - task: PowerShell@2
