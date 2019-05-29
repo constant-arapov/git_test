@@ -1,9 +1,4 @@
 # .NET Desktop
-- task: CmdLine@2
-  inputs:
-    script: 'echo Write your commands here
-      
-      echo Use the environment variables input below to pass secret variables to this script'
 
 trigger:
 - master
@@ -21,6 +16,13 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'convert.ps1'
+
+- task: CmdLine@2
+  inputs:
+    script: 'echo Write your commands here
+      
+      echo Use the environment variables input below to pass secret variables to this script'
+
 
 
     
